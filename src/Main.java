@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -70,5 +71,24 @@ public class Main {
                     default -> "Moze innym razem";
                 }
         );
+        //losujemy liczne i zgadujemy 10
+
+        Random random = new Random();
+        wylosowanaLiczba = random.nextInt(1,101);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Podaj liczbe");
+            wpisanaLiczba = scanner.nextInt();
+            if(wpisanaLiczba == wylosowanaLiczba){
+                System.out.println("brawo");
+                break;
+            }
+            if(wpisanaLiczba>wylosowanaLiczba){
+                System.out.println("za duzo");
+            }
+            if(wpisanaLiczba<wylosowanaLiczba){
+                System.out.println("za malo");
+            }
+        }
     }
 }

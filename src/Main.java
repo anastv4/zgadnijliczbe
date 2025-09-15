@@ -17,5 +17,12 @@ public class Main {
         boolean czyPrawda = true; //false
         //typ znakowy
         char znak = 'a';
+
+        //wylosuj liczbe z zakresu od 1 do 100
+        //zgadnij wylosowana liczbe wpisujac ja z klawiatury
+
+        int wylosowanaLiczba =(int) (Math.random()*100+1);//rzutowanie
+        double wylosowana2 = wylosowanaLiczba;
+
     }
 }

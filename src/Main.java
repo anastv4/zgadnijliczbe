@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Dzien dobry");
@@ -23,6 +25,12 @@ public class Main {
 
         int wylosowanaLiczba =(int) (Math.random()*100+1);//rzutowanie
         double wylosowana2 = wylosowanaLiczba;
+        System.out.println("Wulosowano "+ wylosowanaLiczba);
+        // odczyt z klawiatury
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbe");
+        int wpisanaLiczba = scanner.nextInt();
+        System.out.println("Wpisano "+wpisanaLiczba);
 
     }
 }

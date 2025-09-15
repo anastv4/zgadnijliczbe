@@ -46,5 +46,29 @@ public class Main {
         //wyrazenie warunkowe -> zwraca wartosc
         roznica = wylosowanaLiczba>wpisanaLiczba?wylosowanaLiczba-wpisanaLiczba:wpisanaLiczba-wylosowanaLiczba;
         System.out.println("Pomyliles sie o "+ roznica);
+        //dziellenie calkowite
+        roznica = roznica/10; //jezeli dziele dwie liczby calkowite to wynik zawsze calkowity
+        switch(roznica){
+            case 0:
+                System.out.println("Super");
+                break;
+            case 1:
+                System.out.println("Bardzo blisko");
+                break;
+            case 2:
+                System.out.println("Moze byc");
+                break;
+            default:
+                System.out.println("Moze nastepnym razem");
+        }
+        //wyrazenie switch -> zwraca wartosc
+        System.out.println(
+                switch (roznica){
+                    case 0->"Super";
+                    case 1->"Bardzo blisko";
+                    case 2->"Moze byc";
+                    default -> "Moze innym razem";
+                }
+        );
     }
 }

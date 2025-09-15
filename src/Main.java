@@ -1,5 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Dzien dobry");
+        //typy proste
+        //zmienne a nie obiekty
+        //male litery
+        //typy calkowite
+        byte liczba1 =124;
+        short liczba2 = 12345;
+        int liczba3 = 123456;
+        long liczba4 = 123456789;
+        System.out.println("Liczba całkowita " +liczba4);
+        //typy zmiennoprzecinkowe
+        float liczba5 = 23.65f; //na koncu f
+        double liczba6 = 235.5654;
+        //typ logiczny
+        boolean czyPrawda = true; //false
+        //typ znakowy
+        char znak = 'a';
     }
 }
